@@ -66,11 +66,10 @@ library(formattable)
 
   # Dosya Yükle ----
   
-  dosya_bilgiler <- read_excel("../Aktüeryal_Bilirkisi_Projesi/data/dosya_bilgiler.xlsx", sheet = "Sayfa1")
   
-  PR_TRH_2010 <- read_excel("../Aktüeryal_Bilirkisi_Projesi/data/TRH2010_son.xlsx", sheet = "Sayfa1")
+  PR_TRH_2010 <- read_excel("../app_bilirkisi/data/TRH2010_son.xlsx", sheet = "Sayfa1")
   
-  Asgari_Tablo <- read_excel("../Aktüeryal_Bilirkisi_Projesi/data/Asgari Ucret Tablosu.xlsx", sheet = "Program")
+  Asgari_Tablo <- read_excel("../app_bilirkisi/data/Asgari Ucret Tablosu.xlsx", sheet = "Program")
   
 
 ```
@@ -82,7 +81,7 @@ library(formattable)
   # Dosya Bilgileri ----
   
   dosya_no <- params$PDosya_No
-  dosya <- dosya_bilgiler %>% filter(Dosya_No == dosya_no)
+  # dosya <- dosya_bilgiler %>% filter(Dosya_No == dosya_no)
 
   
   # Genel Bilgiler ----
