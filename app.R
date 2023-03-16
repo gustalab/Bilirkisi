@@ -1,4 +1,3 @@
-test
 
 library(shiny)
 library(shinyWidgets)
